@@ -14,7 +14,7 @@ def generate_code_openai(prompt, max_tokens=500, temperature=0.7):
     """
     try:
         response = openai.chat.completions.create(
-            model="gpt-3.5-turbo",  # Use gpt-3.5-turbo or gpt-4
+            model="gpt-4",  # Use gpt-3.5-turbo or gpt-4
             messages=[
                 {"role": "system", "content": "You are an assistant that generates complete HTML code with embedded CSS and JS."},
                 {"role": "user", "content": f"""Create a complete and functional webpage based on the following description:\n{prompt}\n
